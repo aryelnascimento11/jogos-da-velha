@@ -1,20 +1,19 @@
 let jogador = "X"
 
+let tabela = ["","","","","","","","",""]
 
-function marcar(id) {
-    let celula = document.getElementById(id)
-    
-     
-    if(celula.innerHTML === ""){
-        celula.innerHTML = jogador
-    } else{
-        return
-    }
-
-    if (jogador == "X") {
+function marcar(id){
+ 
+    tabela[id] = jogador
+    if(jogador == "X"){
         jogador = "O"
-    } else {
-        jogador = "X"    
+    }else{
+        jogador = "X"
     }
+    render()
 }
- //  === valor de comparar
+
+function render(){
+    let tds = document.querySelectorAll("tds")
+    for(let id = 0;)
+}
